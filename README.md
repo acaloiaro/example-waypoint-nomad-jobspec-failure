@@ -20,7 +20,6 @@ After running `waypoint up`, the end result is a job that successfully deploys t
 $ nomad alloc logs $(nomad job periodic force example-periodic-failure | grep Allocation | awk '{print $3}' | sed s/\"//g )
 $ hello world
 ```
-
 # Example app status output, indicating `ERROR` Lifecycle state
 
 ## Lifecycle state after deployment
