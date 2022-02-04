@@ -1,6 +1,6 @@
 job "example-periodic-failure" {
 
-  datacenters = ["eu-west-1a"]
+  datacenters = ["dc1"]
   type = "batch"
 
   periodic {
