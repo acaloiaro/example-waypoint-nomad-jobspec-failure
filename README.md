@@ -1,12 +1,17 @@
 # About
 
-This is a demonstration of a `waypoint deploy` bug resulting in successful Periodic Nomad Jobspecs deployments marked as failures.
+This repo demonstrates a `waypoint deploy` bug resulting in successful Periodic Nomad Jobspecs deployments marked as failures.
 
 Periodic Nomad Jobspec deployments result in the following message on the CLI
 
 > ! No evaluation with id "" found
 
-# Reproduce
+# Symptoms
+
+1. Cannot use `waypoint logs`
+2. Cannot destroy the project. However, `waypoint destroy --auto-approve` does report that the destroy is successful.
+
+# How to Reproduce
 
 With a working waypoint/nomad environment, run the following in this directory:
 
