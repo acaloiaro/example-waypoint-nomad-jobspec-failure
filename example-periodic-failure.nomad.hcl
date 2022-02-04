@@ -5,7 +5,6 @@ job "example-periodic-failure" {
 
   periodic {
     cron             = "* * * * * *"
-    prohibit_overlap = true
   }
 
   task "main" {
@@ -14,11 +13,6 @@ job "example-periodic-failure" {
     config {
       command = "echo"
       args    = ["hello world"]
-    }
-
-    resources {
-      cpu    = 100
-      memory = 128
     }
   }
 }
